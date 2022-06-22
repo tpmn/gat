@@ -164,18 +164,13 @@ body {
 <script>
 function GATCBSTATUS (status)
 {
-if (status == "OK"){loaded=true; window.location="sdk://load";}
-else {loaded=true; window.location="sdk://failLoad";}
+if (status == "OK"){console.log("Success!");}
+else {console.log("Fail.");}
 };
 GAT.loadAd({
       divid : "div_1234",
-      inventoryid: "%%PLACEMENTID%%",
-      adverid: "%%ADVERTISING_ID%%",
-      dnt : "%%DNT%%",
-      ipv4 : "%%IPADDRESS%%",
-      latitude : "%%LATITUDE%%",
-      longitude : "%%LONGITUDE%%",
-      requestid : "%%REQUESTID%%"
+      inventoryid: "1234",
+      adverid: "ec6eb127-a34b-4e7f-a623-78bd6205cfd2"
 }, GATCBSTATUS);
 </script>
 </body>
