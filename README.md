@@ -121,19 +121,6 @@ GAT.loadAd({
 
 ----
 
-
-### Response 
-
-- 광고가 있을 경우.
-
-> JsGatCB3758575419({"result":"OK","scripts":"","htmp":"<광고응답HTML>","callback":"JsGatCB3758575419"})
-
-- 광고가 없을 경우.
-> JsGatCB3758575419({"result":"NOBID","scripts":"","callback":"JsGatCB3758575419"})
-
-
-----
-
 # Example
 
 ```html
