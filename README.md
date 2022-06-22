@@ -71,15 +71,15 @@ GAT.loadAd({
 
 | parameter | type   | required | 설명                   | Escaped |
 |-----------|--------|----------|----------------------|---------|
-| divid     | string | Yes      | 광고영역id (랜더링영역)   |         |
-| ii        | string | Yes      | GAT Inventory Id     |         |
-| adverid   | string | Yes      | idfa                 |         |
-| dnt       | string |          | Do Not Track         |         |
-| ipv4      | string |          | IP Address           |         |
-| latitude  | string |          | Latitude             |         |
-| longitude | string |          | Longitude            |         |
-| requestid | string |          | Request ID           |         |
-| useragent | string |          | User Agent           | Yes     |
+| `divid`     | string | Yes      | 광고영역id (랜더링영역)   |         |
+| `ii`        | string | Yes      | GAT Inventory Id     |         |
+| `adverid`   | string | Yes      | idfa                 |         |
+| `dnt`       | string |          | Do Not Track         |         |
+| `ipv4`      | string |          | IP Address           |         |
+| `latitude`  | string |          | Latitude             |         |
+| `longitude` | string |          | Longitude            |         |
+| `requestid` | string |          | Request ID           |         |
+| `useragent` | string |          | User Agent           | Yes     |
 
 
 ### CallbackFunction 설명
@@ -91,10 +91,10 @@ GAT.loadAd({
 
 | status  | type   | 상태    |
 |---------|--------|-------|
-| OK      | string | 광고수신  |
-| NOBID   | string | 광고없음  |
-| INVALID | string | 잘못된요청 |
-| ERROR   | string | 오류    |
+| `OK`      | string | 광고수신  |
+| `NOBID`   | string | 광고없음  |
+| `INVALID` | string | 잘못된요청 |
+| `ERROR`   | string | 오류    |
 
 **OK**
 
