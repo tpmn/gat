@@ -44,7 +44,7 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 - `<script>` : https://static.tpmn.io/gat/ads.js 리소스 파일을 통해 광고 처리를 수행합니다.
 - `GatCallbackFunction()` : 광고 요청 결과에 대한 이벤트 처리를 할 수 있는 Callback 함수입니다. 
 
-````renderscript
+```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
@@ -64,7 +64,7 @@ GAT.loadAd({
       adverid: "${DEVICE_IDFA}"
 }, GatCallbackFunction);
 </script>
-````
+```
 
 
 ### AdTag Paramter 설명
@@ -137,7 +137,7 @@ GAT.loadAd({
 
 # Example
 
-```renderscript
+```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
