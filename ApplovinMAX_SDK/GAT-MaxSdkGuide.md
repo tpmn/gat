@@ -1,18 +1,7 @@
-# TPMN-GAT
 
-## GAT란?
+# Applovin MAX Integration
 
-JavascriptTag를 사용하여 WaterFall 방식의 광고 입찰방식을 OpenRTB처럼 TPMN 광고 네트워크에서 <b>경쟁입찰</b>을 지원하도록 지원.
-
-
-**지원하는 광고 유형**
-- Banner
-
-**현재 지원하지 않는 광고 유형**
-- Native
-- Video
-
-Applovin MAX 광고 지원 여부
+**Applovin MAX 광고 지원 여부**
 
 | TYPE         | 지원여부     |
 |--------------|----------|
@@ -30,6 +19,8 @@ Applovin MAX 광고 지원 여부
 - Applovin MAX에 GAT tag를 통해 NON-RTB요청을 RTB 광고로 보내기위해서 몇가지 체크사항이 필요합니다.
 
 **Applovin MAX**
+
+[Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 
 - Manage → Network → Custom Network 등록 → GAT 태그를 광고 유형별 등록
 - Manage → Ad Units → 인벤토리 등록 or 수정 → Custom Network → GAT 네트워크 등록
