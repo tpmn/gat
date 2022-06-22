@@ -20,8 +20,7 @@
 
 **Applovin MAX**
 
-[Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
-
+- 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 - Manage → Network → Custom Network 등록 → GAT 태그를 광고 유형별 등록
 - Manage → Ad Units → 인벤토리 등록 or 수정 → Custom Network → GAT 네트워크 등록
 - SDK가 설치된 APP 등록
