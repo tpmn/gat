@@ -1,8 +1,8 @@
-# TPMN-GAT
+# GAT Tag
 
-## GAT란?
+## GAT?
 
-JavascriptTag를 사용하여 WaterFall 방식의 광고 입찰방식을 OpenRTB처럼 TPMN 광고 네트워크에서 <b>경쟁입찰</b>을 지원하도록 지원.
+별도 광고 SDK(ex.admob)를 매체 어플리케이션에 포함하지 않고 JavascriptTag를 활용하여 광고를 송출하도록 지원하는 <b>플래폼</b>.
 
 
 **지원하는 광고 유형**
@@ -38,11 +38,11 @@ JavascriptTag를 사용하여 WaterFall 방식의 광고 입찰방식을 OpenRTB
 
 
 
-### JsTag
+### AdTag
 
 - `<div>` : 광고가 나가는 영역입니다. 해당 div객체 ID를 GAT는 인자로 받습니다. 
 - `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
-- `GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다. 
+- `GatCallbackFunction()` : 광고수신 정상 유무를 처리하기위한 Callback 함수입니다. 
 
 ````renderscript
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
@@ -72,12 +72,12 @@ GAT.loadAd({
 ````
 
 
-### JsTag Paramter 설명
+### AdTag Paramter 설명
 
 | parameter | type   | required | 설명                   | Escaped |
 |-----------|--------|----------|----------------------|---------|
 | divid     | string | Yes      | 광고영역id (랜더링영역)   |         |
-| ii        | string | Yes      | GAT Inventory Tag Id |         |
+| ii        | string | Yes      | GAT Inventory Id     |         |
 | adverid   | string | Yes      | idfa                 |         |
 | dnt       | string |          | Do Not Track         |         |
 | ipv4      | string |          | IP Address           |         |
@@ -137,7 +137,7 @@ GAT.loadAd({
 > JsGatCB3758575419({"result":"OK","scripts":"","htmp":"<광고응답HTML>","callback":"JsGatCB3758575419"})
 
 - 광고가 없을 경우.
-> JsGatCB3758575419({"result":"ERROR","scripts":"","callback":"JsGatCB3758575419"})
+> JsGatCB3758575419({"result":"NOBID","scripts":"","callback":"JsGatCB3758575419"})
 
 
 ----
