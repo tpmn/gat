@@ -5,11 +5,11 @@
 
 | TYPE         | 지원여부     |
 |--------------|----------|
-| Banner       | Yes      |
-| Interstitial | Yes      |
-| MREC         | Yes      |
-| Native       | Not yet  |
-| Rewarded     | Not yet  |
+| `Banner`       | Yes      |
+| `Interstitial` | Yes      |
+| `MREC`         | Yes      |
+| `Native`       | Not yet  |
+| `Rewarded`     | Not yet  |
 
 
 ## 시작하기
@@ -99,15 +99,15 @@ GAT.loadAd({
 
 | parameter | type   | required | 설명                   | Escaped | Macro               |
 |-----------|--------|----------|----------------------|---------|---------------------|
-| divid     | string | Yes      | 광고영역id (랜더링영역)   |         |                     |
-| ii        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
-| adverid   | string | Yes      | idfa                 |         | %%ADVERTISING_ID%%  |
-| dnt       | string |          | Do Not Track         |         | %%DNT%%             |
-| ipv4      | string |          | IP Address           |         | %%IPADDRESS%%       |
-| latitude  | string |          | Latitude             |         | %%LONGITUDE%%       |
-| longitude | string |          | Longitude            |         | %%LATITUDE%%        |
-| requestid | string |          | Request ID           |         | %%REQUESTID%%       |
-| useragent | string |          | User Agent           | Yes     | %%USERAGENT%%       |
+| `divid`     | string | Yes      | 광고영역id (랜더링영역)   |         |                     |
+| `ii`        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
+| `adverid`   | string | Yes      | idfa                 |         | %%ADVERTISING_ID%%  |
+| `dnt`       | string |          | Do Not Track         |         | %%DNT%%             |
+| `ipv4`      | string |          | IP Address           |         | %%IPADDRESS%%       |
+| `latitude`  | string |          | Latitude             |         | %%LONGITUDE%%       |
+| `longitude` | string |          | Longitude            |         | %%LATITUDE%%        |
+| `requestid` | string |          | Request ID           |         | %%REQUESTID%%       |
+| `useragent` | string |          | User Agent           | Yes     | %%USERAGENT%%       |
 
 
 ### CallbackFunction 설명
