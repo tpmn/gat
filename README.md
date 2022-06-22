@@ -111,7 +111,6 @@ GAT.loadAd({
 - 잘못된 요청인 경우입니다.
 - 필수 파라미터가 누락이 또는 공백일 경우에 발생합니다.
 - 잘못된 Inverntory ID를 입력하였을때 발생합니다.
-- SDK에서 User-Agent를 Header 정보를 포함하지 않을 경우 useragent 파라미터에 기기의 User-Agent를 Escaped 처리하여 전달 하시기 바랍니다.
 
 
 **ERROR**
