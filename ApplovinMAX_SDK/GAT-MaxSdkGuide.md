@@ -67,7 +67,7 @@
 - `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
 - `GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
-````renderscript
+```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
@@ -92,7 +92,7 @@ GAT.loadAd({
       requestid : "%%REQUESTID%%"
 }, GatCallbackFunction);
 </script>
-````
+```
 
 
 ### JsTag Paramter 설명
@@ -119,10 +119,10 @@ GAT.loadAd({
 
 | status  | type   | 상태    |
 |---------|--------|-------|
-| OK      | string | 광고수신  |
-| NOBID   | string | 광고없음  |
-| INVALID | string | 잘못된요청 |
-| ERROR   | string | 오류    |
+| `OK`      | string | 광고수신  |
+| `NOBID`   | string | 광고없음  |
+| `INVALID` | string | 잘못된요청 |
+| `ERROR`   | string | 오류    |
 
 **OK**
 
@@ -160,6 +160,7 @@ GAT.loadAd({
 > JsGatCB3758575419({"result":"OK","scripts":"","htmp":"<광고응답HTML>","callback":"JsGatCB3758575419"})
 
 - 광고가 없을 경우.
+
 > JsGatCB3758575419({"result":"NOBID","scripts":"","callback":"JsGatCB3758575419"})
 
 
@@ -169,7 +170,7 @@ GAT.loadAd({
 
 ## Banner
 
-```renderscript
+```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -210,7 +211,7 @@ GAT.loadAd({
 
 ## Interstitial
 
-```renderscript
+```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -251,7 +252,7 @@ GAT.loadAd({
 
 ## MREC
 
-```renderscript
+```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -292,12 +293,12 @@ GAT.loadAd({
 
 ## Native
 
-```renderscript
+```html
 Support Not yet.
 ```
 
 ## Rewarded
 
-```renderscript
+```html
 Support Not yet.
 ```
