@@ -1,6 +1,6 @@
 # GAT Tag
 
-## GAT?
+## About?
 
 별도 광고 SDK(ex.admob)를 매체 어플리케이션에 포함하지 않고 JavascriptTag를 활용하여 광고를 송출하도록 지원하는 <b>플래폼</b>.
 
@@ -24,7 +24,7 @@
 
 ### 인벤토리ID 발급
 
-- GAT Tag를 사용하려면 Inventory ID 발급이 선행되어야 합니다.
+- Ad Tag를 사용하려면 Inventory ID 발급이 선행되어야 합니다.
 - 광고지면의 Inventory ID 발급문의는 TPMN 매니저 또는 대표메일(info@tpmn.io)로 문의 주시기 바랍니다.
 > 소속 및 이름 : 
 > 
