@@ -60,13 +60,8 @@ function GatCallbackFunction (status)
 };
 GAT.loadAd({
       divid : "div_adInventory",
-      inventoryid: "{발급받은 GAT InventoryId}",
-      adverid: "%%ADVERTISING_ID%%",
-      dnt : "%%DNT%%",
-      ipv4 : "%%IPADDRESS%%",
-      latitude : "%%LATITUDE%%",
-      longitude : "%%LONGITUDE%%",
-      requestid : "%%REQUESTID%%"
+      inventoryid: "${GAT_INVENTORY_ID}",
+      adverid: "${DEVICE_IDFA}"
 }, GatCallbackFunction);
 </script>
 ````
