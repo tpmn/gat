@@ -28,6 +28,12 @@
 - 테스트 진행
 
 
+**GAT JsTag**
+
+- [x] Applovin SDK 매크로 지원
+- [x] Callback을 통한 Applovin SDK 처리 지원
+
+
 **Applovin MAX**
 
 - 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
@@ -38,12 +44,6 @@
 **APP**
 
 - [x] 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
-
-
-**GAT JsTag**
-
-- [x] Applovin SDK 매크로 지원
-- [x] Callback을 통한 Applovin SDK 처리 지원
 
 
 ### Max GAT Tag Template
