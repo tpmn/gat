@@ -31,7 +31,7 @@
 
 **GAT JsTag**
 
-- [x] Applovin SDK 크로 지원
+- [x] Applovin SDK 매크로 지원
 - [x] Callback을 통한 Applovin SDK 처리 지원
 
 **연동 순서**
