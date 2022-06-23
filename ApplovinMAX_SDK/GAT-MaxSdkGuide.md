@@ -21,19 +21,19 @@
 **Applovin MAX**
 
 - 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
-- Manage → Network → Custom Network 등록 → GAT 태그를 광고 유형별 등록
-- Manage → Ad Units → 인벤토리 등록 or 수정 → Custom Network → GAT 네트워크 등록
-- SDK가 설치된 APP 등록
+- [x] Manage → Network → Custom Network 등록 → GAT 태그를 광고 유형별 등록
+- [x] Manage → Ad Units → 인벤토리 등록 or 수정 → Custom Network → GAT 네트워크 등록
+- [x] SDK가 설치된 APP 등록
 
 **APP**
 
-- Applovin Max SDK 연동이 되어있어야 합니다.
-- 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
+- [x] Applovin Max SDK 연동이 되어있어야 합니다.
+- [x] 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
 
 **GAT JsTag**
 
-- Applovin SDK 메크로 지원
-- Callback을 통한 Applovin SDK 처리 지원
+- [x] Applovin SDK 메크로 지원
+- [x] Callback을 통한 Applovin SDK 처리 지원
 
 **연동 순서**
 
