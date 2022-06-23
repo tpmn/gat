@@ -1,5 +1,5 @@
 
-# Applovin MAX Integration
+# GAT - Applovin MAX Integration
 
 **Applovin MAX 광고 지원 여부**
 
@@ -16,18 +16,17 @@
 
 **사전정보**
 
-- Applovin MAX에 GAT tag를 통해 NON-RTB요청을 RTB 광고로 보내기위해서 몇가지 체크사항이 필요합니다.
+- Applovin MAX에서 지원하는 Custom JS Tag Network방식을 통해 GAT Tag와 연동이 가능합니다.
+- 이를 위해 아래 사항을 확인하고 설정이 필요합니다.
 
 **Applovin MAX**
 
 - 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
-- [x] Manage → Network → Custom Network 등록 → GAT 태그를 광고 유형별 등록
-- [x] Manage → Ad Units → 인벤토리 등록 or 수정 → Custom Network → GAT 네트워크 등록
-- [x] SDK가 설치된 APP 등록
+- [x] Manage → Network → 신규 Custom Network 등록
+- [x] Manage → Ad Units → 인벤토리 등록 or 수정 → Custom Network → 신규 생생된(GAT 네트워크) 설정후 활성화
 
 **APP**
 
-- [x] Applovin Max SDK 연동이 되어있어야 합니다.
 - [x] 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
 
 **GAT JsTag**
@@ -37,31 +36,14 @@
 
 **연동 순서**
 
-- App에 Applobin SDK 연동 완료
 - GAT 인벤토리 ID 발급
-- MAX Custom Netowork 등록
-- MAX Ad Units에 Inventory 등록 or 추가
-- JsTag의 CallBackFunction 정의
+- MAX Custom Netowork 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
+- MAX Ad Units에 MAX GAT Custom Netowork Inventory 설정후 활성화
 - 테스트 진행
 
 
-### 인벤토리ID 발급
 
-- GAT Tag를 사용하려면 Inventory ID 발급이 선행되어야 합니다.
-- 광고지면의 Inventory ID 발급문의는 TPMN 매니저 또는 대표메일(info@tpmn.io)로 문의 주시기 바랍니다.
-> 소속 및 이름 :
->
-> AppBundle Id :
->
-> 연락처(Phone) :
->
-> 내용 :
->
-> Applobin SDK 사용 여부 :
-
-
-
-### JsTag
+### Max GAT Tag Template
 
 - `<div>` : 광고가 나가는 영역입니다. 해당 div객체 ID를 GAT는 인자로 받습니다.
 - `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
@@ -74,11 +56,11 @@
 function GatCallbackFunction (status)
 {
     if (status == "OK"){
-        console.log("Success");
-        //TO-DO Custom Action..
-    } else {
-        console.log("Fail");
-        //TO-DO Custom Action..
+        -- Max에서 정상 광고 수신시 노출하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.
+        loaded=true; window.location="applovin://load";
+    }else {
+        -- Max에서 광고 없음을 수신하고 다음 동작을 하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.
+        loaded=true; window.location="applovin://failLoad";
     }
 };
 GAT.loadAd({
