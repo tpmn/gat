@@ -31,7 +31,7 @@
 
 **GAT JsTag**
 
-- [x] Applovin SDK 메크로 지원
+- [x] Applovin SDK 크로 지원
 - [x] Callback을 통한 Applovin SDK 처리 지원
 
 **연동 순서**
@@ -56,10 +56,10 @@
 function GatCallbackFunction (status)
 {
     if (status == "OK"){
-        -- Max에서 정상 광고 수신시 노출하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.
+        <!-- Max에서 정상 광고 수신시 노출하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.-->
         loaded=true; window.location="applovin://load";
     }else {
-        -- Max에서 광고 없음을 수신하고 다음 동작을 하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.
+        <!-- Max에서 광고 없음을 수신하고 다음 동작을 하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.-->
         loaded=true; window.location="applovin://failLoad";
     }
 };
