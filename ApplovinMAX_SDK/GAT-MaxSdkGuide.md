@@ -94,7 +94,7 @@ GAT.loadAd({
 
 ### Response status CallbackFunction 설명
 
-- GAT를 통한 광고 응답 상태 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
+- 추가 구현을 통해 광고 응답 상태 따른 Action을 수행할 수 있습니다.(MAX 플랫폼에서 필요한 사항은 제거하지 말아주세요!)
 - CallbackFunction 이름은 수정이 가능합니다.
 
 
