@@ -42,7 +42,7 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 
 - `<div>` : 광고가 노출되는 영역 정보 입니다. 광고 요청시(loadAd)시 해당 div객체 ID를 동일하게 설정하여 주세요.
 - `<script>` : https://static.tpmn.io/gat/ads.js 리소스 파일을 통해 광고 처리를 수행합니다.
-- `GatCallbackFunction()` : 광고 요청 결과에 대한 이벤트 처리를 할 수 있는 Callback 함수입니다. 
+- `GatCallbackFunction()` : 광고 Response 결과에 대한 이벤트 처리를 할 수 있는 Callback 함수입니다. 
 
 ```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
@@ -82,12 +82,12 @@ GAT.loadAd({
 | `useragent` | string |          | User Agent           | Yes     |
 
 
-### CallbackFunction 설명
+### Response status CallbackFunction 설명
 
-- GAT를 통한 광고 여부에 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
+- GAT를 통한 광고 응답 상태 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
 - CallbackFunction 이름은 수정이 가능합니다.
 
-### CallbackFunction status parameter
+### Response CallbackFunction status parameter
 
 | status  | type   | 상태    |
 |---------|--------|-------|
