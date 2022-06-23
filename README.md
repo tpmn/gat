@@ -16,13 +16,13 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 
 ### 연동 순서
 
-- 인벤토리ID 발급
-- SDK에 Tag 등록
+- TPMN GAT 인벤토리ID 발급
+- AD SDK에 Tag 등록
 - JsTag의 CallBackFunction 정의
 - 테스트 진행
 
 
-### 인벤토리ID 발급
+### TPMN GAT 인벤토리ID 발급
 
 - Ad Tag를 사용하려면 Inventory ID 발급이 선행되어야 합니다.
 - 광고지면의 Inventory ID 발급문의는 TPMN 매니저 또는 대표메일(info@tpmn.io)로 문의 주시기 바랍니다.
