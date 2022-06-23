@@ -19,28 +19,31 @@
 - Applovin MAX의 Custom JS Tag Network방식을 활용하여 GAT Tag와 연동을 합니다.
 - 이를 위해 아래 사항을 확인하고 설정이 필요합니다.
 
+
+**연동 순서**
+
+- GAT 인벤토리 ID 발급
+- MAX Custom JS Tag Network 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
+- MAX Ad Units에 MAX GAT Custom Netowork Inventory 설정후 활성화
+- 테스트 진행
+
+
 **Applovin MAX**
 
 - 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 - [x] Manage → Network → 신규 Custom Network 등록
 - [x] Manage → Ad Units → Custom Network(GAT Network) → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
 
+
 **APP**
 
 - [x] 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
+
 
 **GAT JsTag**
 
 - [x] Applovin SDK 매크로 지원
 - [x] Callback을 통한 Applovin SDK 처리 지원
-
-**연동 순서**
-
-- GAT 인벤토리 ID 발급
-- MAX Custom Netowork 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
-- MAX Ad Units에 MAX GAT Custom Netowork Inventory 설정후 활성화
-- 테스트 진행
-
 
 
 ### Max GAT Tag Template
