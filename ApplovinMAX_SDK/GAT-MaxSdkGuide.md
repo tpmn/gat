@@ -16,7 +16,7 @@
 
 **사전정보**
 
-- Applovin MAX에서 지원하는 Custom JS Tag Network방식을 통해 GAT Tag와 연동이 가능합니다.
+- Applovin MAX의 Custom JS Tag Network방식을 활용하여 GAT Tag와 연동을 합니다.
 - 이를 위해 아래 사항을 확인하고 설정이 필요합니다.
 
 **Applovin MAX**
