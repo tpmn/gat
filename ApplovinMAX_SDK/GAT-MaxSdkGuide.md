@@ -110,12 +110,13 @@ GAT.loadAd({
 | `useragent` | string |          | User Agent           | Yes     | %%USERAGENT%%       |
 
 
-### CallbackFunction 설명
+### Response status CallbackFunction 설명
 
-- GAT를 통한 광고 여부에 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
+- GAT를 통한 광고 응답 상태 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
 - CallbackFunction 이름은 수정이 가능합니다.
 
-### CallbackFunction status parameter
+
+### Response CallbackFunction status parameter
 
 | status  | type   | 상태    |
 |---------|--------|-------|
