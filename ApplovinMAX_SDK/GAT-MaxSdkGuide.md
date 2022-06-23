@@ -23,7 +23,7 @@
 
 - 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 - [x] Manage → Network → 신규 Custom Network 등록
-- [x] Manage → Ad Units → Custom Network → 생생된 Custom Network(GAT 네트워크) 선택 → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
+- [x] Manage → Ad Units → Custom Network(GAT Network) → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
 
 **APP**
 
