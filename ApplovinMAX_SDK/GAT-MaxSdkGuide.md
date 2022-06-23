@@ -65,7 +65,7 @@ function GatCallbackFunction (status)
 };
 GAT.loadAd({
       divid : "div_adInventory",
-      inventoryid: "{발급받은 GAT InventoryId}",
+      inventoryid: "%%PLACEMENTID%%",
       adverid: "%%ADVERTISING_ID%%",
       dnt : "%%DNT%%",
       ipv4 : "%%IPADDRESS%%",
