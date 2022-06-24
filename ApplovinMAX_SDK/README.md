@@ -49,7 +49,7 @@
 
 ### Max GAT Tag Template
 
-- `<div>` : 광고가 나가는 영역입니다. 해당 div객체 ID를 GAT는 인자로 받습니다.
+- `<div>` : 광고가 나가는 영역입니다. 광고 요청시(loadAd)시 <span style="color:blue">해당 div객체 ID를 동일하게 설정</span>하는 것을 권장합니다.
 - `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
 - `GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
