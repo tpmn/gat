@@ -1,6 +1,8 @@
 
 # TPMN AdTag for app - Applovin MAX Integration
 
+*참고 : GAT는 TPMN AdTag for app의 약어입니다.
+
 **Applovin MAX 광고 지원 여부**
 
 | TYPE         | 지원여부     |
@@ -22,13 +24,13 @@
 
 **연동 순서**
 
-- GAT 인벤토리 ID 발급
+- TPMN AdTag 인벤토리 ID 발급
 - MAX Custom JS Tag Network 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
 - MAX Ad Units에 Custom Netowork Inventory 설정 후 활성화
 - 테스트 진행
 
 
-**GAT JsTag**
+**TPMN AdTag**
 
 - [x] Applovin SDK 매크로 지원
 - [x] Callback을 통한 Applovin SDK 처리 지원
