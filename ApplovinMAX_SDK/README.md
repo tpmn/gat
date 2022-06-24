@@ -172,7 +172,7 @@ body {
 <div id="div_max" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
-function GatCallbackAd (status)
+function tagCallbackAd (status)
 {
 if (status == "OK"){loaded=true; window.location="applovin://load";}
 else {loaded=true; window.location="applovin://failLoad";}
@@ -186,7 +186,7 @@ GAT.loadAd({
       latitude : "%%LATITUDE%%",
       longitude : "%%LONGITUDE%%",
       requestid : "%%REQUESTID%%"
-}, GatCallbackAd);
+}, tagCallbackAd);
 </script>
 </body>
 </html>
@@ -213,7 +213,7 @@ body {
 <div id="div_max_interstitial" style="width:100%;height: 100%;display: flex; justify-content: center;align-items : center;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
-function GatCallbackAd (status)
+function tagCallbackAd (status)
 {
 if (status == "OK"){loaded=true; window.location="applovin://load";}
 else {loaded=true; window.location="applovin://failLoad";}
@@ -227,7 +227,7 @@ GAT.loadAd({
       latitude : "%%LATITUDE%%",
       longitude : "%%LONGITUDE%%",
       requestid : "%%REQUESTID%%"
-}, GatCallbackAd);
+}, tagCallbackAd);
 </script>
 </body>
 </html>
@@ -254,7 +254,7 @@ body {
 <div id="div_max" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
-function GatCallbackAd (status)
+function tagCallbackAd (status)
 {
 if (status == "OK"){loaded=true; window.location="applovin://load";}
 else {loaded=true; window.location="applovin://failLoad";}
@@ -269,7 +269,7 @@ GAT.loadAd({
       longitude : "%%LONGITUDE%%",
       requestid : "%%REQUESTID%%",
       useragent : "%%USERAGENT%%"
-}, GatCallbackAd);
+}, tagCallbackAd);
 </script>
 </body>
 </html>
