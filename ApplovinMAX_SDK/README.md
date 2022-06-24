@@ -36,9 +36,10 @@
 
 **Applovin MAX**
 
-- 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 - [x] Manage → Network → 신규 Custom Network 등록
 - [x] Manage → Ad Units → Custom Network(GAT Network) → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
+- 참고 : [Applovin Max 설정방법(Notion)](https://www.notion.so/tpmnkorea/Applovin-MAX-6c6e8097c92f41ab8a5d8bb4933354a6)
+- 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 
 
 **APP**
