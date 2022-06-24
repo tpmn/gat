@@ -58,9 +58,6 @@ GAT.loadAd({
 
 `tagCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
-- `<script>` : https://static.tpmn.io/gat/ads.js 리소스 파일을 통해 광고 처리를 수행합니다.
-- `tagCallbackFunction()` : 광고 Response 결과에 대한 이벤트 처리를 할 수 있는 Callback 함수입니다. 
-
 ```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
