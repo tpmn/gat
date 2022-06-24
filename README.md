@@ -1,4 +1,4 @@
-# GAT Tag
+# TPMN AdTag for app(GAT)
 
 ## About?
 
@@ -16,13 +16,13 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 
 ### 연동 순서
 
-- TPMN GAT 인벤토리ID 발급
+- TPMN AdTag for app 인벤토리ID 발급
 - AD SDK에 Tag 등록
 - JsTag의 CallBackFunction 정의
 - 테스트 진행
 
 
-### TPMN GAT 인벤토리ID 발급
+### TPMN AdTag for app 인벤토리ID 발급
 
 - Ad Tag를 사용하려면 Inventory ID 발급이 선행되어야 합니다.
 - 광고지면의 Inventory ID 발급문의는 TPMN 매니저 또는 대표메일(info@tpmn.io)로 문의 주시기 바랍니다.
@@ -54,16 +54,16 @@ GAT.loadAd({
 
 `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
 
-`GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
+`tagCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
 - `<script>` : https://static.tpmn.io/gat/ads.js 리소스 파일을 통해 광고 처리를 수행합니다.
-- `GatCallbackFunction()` : 광고 Response 결과에 대한 이벤트 처리를 할 수 있는 Callback 함수입니다. 
+- `tagCallbackFunction()` : 광고 Response 결과에 대한 이벤트 처리를 할 수 있는 Callback 함수입니다. 
 
 ```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
-function GatCallbackFunction (status)
+function tagCallbackFunction (status)
 {
     if (status == "OK"){
         console.log("Success");
@@ -75,9 +75,9 @@ function GatCallbackFunction (status)
 };
 GAT.loadAd({
       divid : "div_adInventory",
-      inventoryid: "${GAT_INVENTORY_ID}",
+      inventoryid: "${TAG_INVENTORY_ID}",
       adverid: "${DEVICE_IDFA}"
-}, GatCallbackFunction);
+}, tagCallbackFunction);
 </script>
 ```
 
@@ -99,7 +99,7 @@ GAT.loadAd({
 
 ### Response status CallbackFunction 설명
 
-- GAT를 통한 광고 응답 상태 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
+- TPMN AdTag for app 통한 광고 응답 상태 따른 SDK에서 처리해야할 Action을 수행하면 됩니다.
 - CallbackFunction 이름은 수정이 가능합니다.
 
 ### Response CallbackFunction status parameter
@@ -156,7 +156,7 @@ body {
 <div id="div_1234" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
-function GATCBSTATUS (status)
+function tagCbStatus (status)
 {
 if (status == "OK"){console.log("Success!");}
 else {console.log("Fail.");}
@@ -165,7 +165,7 @@ GAT.loadAd({
       divid : "div_1234",
       inventoryid: "1234",
       adverid: "ec6eb127-a34b-4e7f-a623-78bd6205cfd2"
-}, GATCBSTATUS);
+}, tagCbStatus);
 </script>
 </body>
 </html>
