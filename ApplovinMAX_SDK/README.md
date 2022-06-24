@@ -49,9 +49,15 @@
 
 ### Max GAT Tag Template
 
-- `<div>` : 광고가 나가는 영역입니다. 광고 요청시(loadAd)시 <span style="color:blue">해당 div객체 ID를 동일하게 설정</span>하는 것을 권장합니다.
-- `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
-- `GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
+`<div>` : 광고가 나가는 영역입니다. 
+- 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 권장합니다.
+- "div_" + inventory ID 예시 : 
+- `<div id="`***div_1234***`" sytle="..." />`
+- `GAT.loadAd({ divid : "`***div_1234***`", ....`
+
+`<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
+
+`GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
 ```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
@@ -68,7 +74,7 @@ function GatCallbackFunction (status)
     }
 };
 GAT.loadAd({
-      divid : "div_adInventory",
+      divid : "div_1234",
       inventoryid: "%%PLACEMENTID%%",
       adverid: "%%ADVERTISING_ID%%",
       dnt : "%%DNT%%",
