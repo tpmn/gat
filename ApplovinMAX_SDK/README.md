@@ -1,5 +1,5 @@
 
-# GAT - Applovin MAX Integration
+# TPMN AdTag for app - Applovin MAX Integration
 
 **Applovin MAX 광고 지원 여부**
 
@@ -16,7 +16,7 @@
 
 **사전정보**
 
-- Applovin MAX의 Custom JS Tag Network방식을 활용하여 GAT Tag와 연동을 합니다.
+- Applovin MAX의 Custom JS Tag Network방식을 활용하여 TPMN AdTag for app과 연동을 합니다.
 - 이를 위해 아래 사항을 확인하고 설정이 필요합니다.
 
 
@@ -24,7 +24,7 @@
 
 - GAT 인벤토리 ID 발급
 - MAX Custom JS Tag Network 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
-- MAX Ad Units에 MAX GAT Custom Netowork Inventory 설정후 활성화
+- MAX Ad Units에 Custom Netowork Inventory 설정 후 활성화
 - 테스트 진행
 
 
@@ -37,7 +37,7 @@
 **Applovin MAX**
 
 - [x] Manage → Network → 신규 Custom Network 등록
-- [x] Manage → Ad Units → Custom Network(GAT Network) → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
+- [x] Manage → Ad Units → Custom Network(TPMN_GAT Network) → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
 - 참고 : [Applovin Max 설정방법(Notion)](https://tpmnkorea.notion.site/Applovin-MAX-6c6e8097c92f41ab8a5d8bb4933354a6)
 - 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 
@@ -47,7 +47,7 @@
 - [x] 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
 
 
-### Max GAT Tag Template
+### Max - TPMN AdTag for app Template
 
 `<div>` : 광고가 나가는 영역입니다. 
 - 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 ***권장***합니다.
@@ -63,13 +63,13 @@ GAT.loadAd({
 
 `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
 
-`GatCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
+`tagCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
 ```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
-function GatCallbackFunction (status)
+function tagCallbackFunction (status)
 {
     if (status == "OK"){
         <!-- Max에서 정상 광고 수신시 노출하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.-->
@@ -88,7 +88,7 @@ GAT.loadAd({
       latitude : "%%LATITUDE%%",
       longitude : "%%LONGITUDE%%",
       requestid : "%%REQUESTID%%"
-}, GatCallbackFunction);
+}, tagCallbackFunction);
 </script>
 ```
 
