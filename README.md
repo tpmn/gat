@@ -1,5 +1,7 @@
 # TPMN AdTag for app(GAT)
 
+*참고 : GAT는 TPMN AdTag for app의 약어입니다.
+
 ## About?
 
 앱 매체사 또는 개발자에게 TPMN Exchange를 연결하여 광고를 송출할 수 있도록 설계되었습니다.<br>
