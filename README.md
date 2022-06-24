@@ -41,11 +41,16 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 ### AdTag 요소
 
 `<div>` : 광고가 나가는 영역입니다. 
-- 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 권장합니다.
+- 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 ***권장***합니다.
 - "div_" + inventory ID
-- inventory ID가 1234인 경우 예시 :
-- `<div id="`***div_1234***`" sytle="..." />`
-- `GAT.loadAd({ divid : "`***div_1234***`", ....`
+<pre>
+#inventory ID가 1234인 경우 예시 :
+< div id="<b>div_1234</b>" sytle="..." />
+GAT.loadAd({
+    divid : "<b>div_1234</b>",
+    inventoryid: "<b>1234</b>",
+    ....
+</pre>
 
 `<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
 
