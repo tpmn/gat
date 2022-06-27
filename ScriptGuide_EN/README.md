@@ -96,7 +96,7 @@ GAT.loadAd({
 | `useragent` | string |          | User Agent           | Yes     |
 
 
-### About Response status CallbackFunction
+### About Response status Callback Function
 
 - This function need to define addtional actions for SDK to take according to response status.
 - The name of callbackFunction can be changed freely.
