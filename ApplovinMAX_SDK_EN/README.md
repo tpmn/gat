@@ -112,42 +112,40 @@ GAT.loadAd({
 
 ### About Response status Callback Function
 
-- 추가 구현을 통해 광고 응답 상태 따른 Action을 수행할 수 있습니다.(MAX 플랫폼에서 필요한 사항은 제거하지 말아주세요!)
-- CallbackFunction 이름은 수정이 가능합니다.
+- With addtional implementation, you can make this function take an appropriate action according to response status. (Do not delete parts for Max plattform.)
+- The name of callback Function can be changed freely.
 
 
-### Response CallbackFunction status parameter
+### Response Callback Function status parameter
 
-| status  | type   | 상태    |
+| status  | type   | status    |
 |---------|--------|-------|
-| `OK`      | string | 광고수신  |
-| `NOBID`   | string | 광고없음  |
-| `INVALID` | string | 잘못된요청 |
-| `ERROR`   | string | 오류    |
+| `OK`      | string | Normal  |
+| `NOBID`   | string | No Bid  |
+| `INVALID` | string | Bad Request |
+| `ERROR`   | string | Error    |
 
 **OK**
 
-- 정상적으로 응답을 받았으며 광고 HTML이 포함된 경우입니다.
-- SDK에 광고 응답 및 노출 집계 처리를 수행하면 됩니다.
+- It means you get response normally and the ad HTML tag is included in your ad slot succesfully.
 
 
 **NOBID**
 
-- 광고가 없는 상태 입니다.
-- SDK에서 광고가 없는 상태를 집계 및 처리를 수행하면 됩니다.
+- There is no ad to impress.
 
 
 **INVALID**
 
-- 잘못된 요청인 경우입니다.
-- 필수 파라미터가 누락이 또는 공백일 경우에 발생합니다.
-- 잘못된 Inverntory ID를 입력하였을때 발생합니다.
+- It means bad request. Below are possible factors.
+- Check if you missed required parameter.
+- Check if the inventory Id is valid.
 
 
 **ERROR**
 
-- 요청을 처리 중 오류가 발생한 경우입니다.
-- 지원하지 않는 형식인 경우 발생합니다.
+- It means there was an error during the process.
+- Check if the request format is right.
 
 
 ----
