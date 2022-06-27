@@ -19,14 +19,14 @@
 **What We Are Trying To Do**
 
 - We connect TPMN AdTag for app through Custom JS Tag Network method provided by Applovin Max.
-- Below are check point and procedure for setting.
+- Below are checkpoint and procedure for setting.
 
 
 **How to use GAT through Custom JS Tag Network Method**
 
-- You need to get GAT Inventory ID From us
+- You need to get GAT Inventory ID from us
 - Register MAX Custom JS Tag Network (You must Define CallBack Function For Dealing With Events Related to Ad Request and Response)
-- Add Custom Netowork Inventory into MAX Ad Units and Activate it.
+- Add Custom Netowork Inventory into MAX Ad Units and Activate it
 - Do a Test
 
 
@@ -46,13 +46,13 @@
 
 **APP**
 
-- [x] Check If Ad Is Impressed Well in the Area through Applovin Max SDK.
+- [x] Check If Ad Is Impressed Well in the Area through Applovin Max SDK
 
 
 ### Max - TPMN AdTag for app Template
 
 `<div>` : This tag define the area where ad is impressed. 
-- When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the 'divid' parameter value in script*** 
+- When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the 'divid' parameter value in script.*** 
 - "div_" + inventory ID
 <pre>
 #For example, let the inventory ID is 1234 :
