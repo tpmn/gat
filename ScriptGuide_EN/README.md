@@ -10,7 +10,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 **Ad Type We Support**
 - Banner
 
-**Ad Type We do not Support**
+**Ad Type We Do Not Support**
 - Native
 - Video
 
