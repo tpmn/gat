@@ -117,7 +117,7 @@ GAT.loadAd({
 
 **NOBID**
 
-- The bid was not succesful so there is no ad to impress.
+- bids were not succesful so there is no ad to impress.
 
 
 **INVALID**
