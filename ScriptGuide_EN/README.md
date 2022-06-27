@@ -122,7 +122,7 @@ GAT.loadAd({
 
 **INVALID**
 
-- It means bad request. Below are possible factors
+- It means bad request. Below are possible factors.
 - Check if you missed required parameter.
 - Check if the inventory Id is valid.
 
