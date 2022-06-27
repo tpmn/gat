@@ -128,7 +128,7 @@ GAT.loadAd({
 **OK**
 
 - It means you get response normally and the ad HTML tag is included in your ad slot succesfully.
-- Now you can utilize ad response and impression data for aggregation or addtional process in SDK.
+- Now you can utilize the ad response and impression data for aggregation or addtional process in SDK.
 
 
 **NOBID**
