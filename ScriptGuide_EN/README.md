@@ -42,7 +42,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 
 ### AdTag Detail
 
-`<div>` : This tag define the area where ad is impressed. Simply saying, It is the inventory slot. 
+`<div>` : This tag define the area where ad is impressed.
 - When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the divid parameter value in script*** 
 - "div_" + inventory ID
 <pre>
