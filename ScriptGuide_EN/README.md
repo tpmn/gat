@@ -130,7 +130,7 @@ GAT.loadAd({
 **ERROR**
 
 - It means there was an error during the process.
-- Check the request format is right.
+- Check if the request format is right.
 
 
 ----
