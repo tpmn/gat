@@ -5,7 +5,7 @@
 ## About?
 
 This tag is for app publishers and developers. They can connect TPMN Exchange and impress our ad through this tag. <br>
-You don't need to install addtionanl AD SDK using this AdTah(GAT). Once you set the condition easily, you can make participants deal ad freely.
+You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set the condition easily, you can make participants deal ad freely.
 
 **Ad Type We Support**
 - Banner
