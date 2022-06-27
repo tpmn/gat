@@ -1,11 +1,11 @@
 
-# TPMN AdTag for app - Applovin MAX Integration
+# TPMN AdTag for app(GAT) - Applovin MAX Integration English Version
 
-*참고 : GAT는 TPMN AdTag for app의 약어입니다.
+*FYI : GAT is the shorthand for TPMN AdTag for app
 
-**Applovin MAX 광고 지원 여부**
+**Ad Type Applovin MAX support**
 
-| TYPE         | 지원여부     |
+| TYPE         | SUPPORT(Y/N)     |
 |--------------|----------|
 | `Banner`       | Yes      |
 | `Interstitial` | Yes      |
@@ -14,48 +14,48 @@
 | `Rewarded`     | Not yet  |
 
 
-## 시작하기
+## Let's start
 
-**사전정보**
+**What We Are Trying To Do**
 
-- Applovin MAX의 Custom JS Tag Network방식을 활용하여 TPMN AdTag for app과 연동을 합니다.
-- 이를 위해 아래 사항을 확인하고 설정이 필요합니다.
+- We connect TPMN AdTag for app through Custom JS Tag Network method provided by Applovin Max.
+- Below are check point and procedure for setting.
 
 
-**연동 순서**
+**How to use GAT through Custom JS Tag Network Method**
 
-- TPMN AdTag 인벤토리 ID 발급
-- MAX Custom JS Tag Network 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
-- MAX Ad Units에 Custom Netowork Inventory 설정 후 활성화
-- 테스트 진행
+- You need to get GAT Inventory ID From us
+- Register MAX Custom JS Tag Network (You must Define CallBack Function For Dealing With Events Related to Ad Request and Response)
+- Add Custom Netowork Inventory into MAX Ad Units and Activate it.
+- Do a Test
 
 
 **TPMN AdTag**
 
-- [x] Applovin SDK 매크로 지원
-- [x] Callback을 통한 Applovin SDK 처리 지원
+- [x] We Support Applovin SDK Macro
+- [x] We Support Applovin SDK Process through CallBack Function
 
 
 **Applovin MAX**
 
-- [x] Manage → Network → 신규 Custom Network 등록
-- [x] Manage → Ad Units → Custom Network(TPMN_GAT Network) → 설정값 입력(PlacementID,CPM Price,Country Targeting) → Status 활성화
-- 참고 : [Applovin Max 설정방법(Notion)](https://tpmnkorea.notion.site/Applovin-MAX-6c6e8097c92f41ab8a5d8bb4933354a6)
-- 참고 : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
+- [x] Manage → Network → Register New Custom Network
+- [x] Manage → Ad Units → Custom Network(TPMN_GAT Network) → Enter Setting values(PlacementID,CPM Price,Country Targeting) → Activate Status
+- reference : [Applovin Max Setting Manual(Notion)](https://tpmnkorea.notion.site/Applovin-MAX-6c6e8097c92f41ab8a5d8bb4933354a6)
+- reference : [Custom JS Tag Network Integration Guide Ref.](https://dash.applovin.com/documentation/mediation/android/mediation-setup/jstag)
 
 
 **APP**
 
-- [x] 광고영역을 Applovin Max SDK로 연동하여 광고가 나오는지 확인 합니다.
+- [x] Check If Ad Is Impressed Well in the Area through Applovin Max SDK.
 
 
 ### Max - TPMN AdTag for app Template
 
-`<div>` : 광고가 나가는 영역입니다. 
-- 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 ***권장***합니다.
+`<div>` : This tag define the area where ad is impressed. 
+- When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the 'divid' parameter value in script*** 
 - "div_" + inventory ID
 <pre>
-#inventory ID가 1234인 경우 예시 :
+#For example, let the inventory ID is 1234 :
 < div id="<b>div_1234</b>" sytle="..." />
 GAT.loadAd({
     divid : "<b>div_1234</b>",
@@ -63,9 +63,9 @@ GAT.loadAd({
     ....
 </pre>
 
-`<script>` : https://static.tpmn.io/gat/ads.js 파일을 통해 광고처리를 수행합니다.
+`<script>` : https://static.tpmn.io/gat/ads.js This is the key file URL for the ad deal process.
 
-`tagCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
+`tagCallbackFunction()` : This is the callback function to deal with event after the process is finished and response is returned.(Response status parameter is explained at the bottom.)
 
 ```html
 <div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
@@ -74,10 +74,10 @@ GAT.loadAd({
 function tagCallbackFunction (status)
 {
     if (status == "OK"){
-        <!-- Max에서 정상 광고 수신시 노출하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.-->
+        <!-- Do Not Delete This. We need this event code to finally impress the ad which is normally received from Max.-->
         loaded=true; window.location="applovin://load";
     }else {
-        <!-- Max에서 광고 없음을 수신하고 다음 동작을 하기 위해 해당 이벤트가 필요합니다.삭제하지 마세요.-->
+        <!-- Do Not Delete This. We need this event code to take an appropriate action after receiving 'NOBID' response from Max.-->
         loaded=true; window.location="applovin://failLoad";
     }
 };
@@ -95,11 +95,11 @@ GAT.loadAd({
 ```
 
 
-### JsTag Paramter 설명
+### JsTag Paramter detail
 
-| parameter | type   | required | 설명                   | Escaped | Macro               |
+| parameter | type   | required | explanation          | Escaped | Macro               |
 |-----------|--------|----------|----------------------|---------|---------------------|
-| `divid`     | string | Yes      | 광고영역id (랜더링영역)   |         |                     |
+| `divid`     | string | Yes      | Ad Slot Div Tag Id   |         |                     |
 | `ii`        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
 | `adverid`   | string | Yes      | idfa                 |         | %%ADVERTISING_ID%%  |
 | `dnt`       | string |          | Do Not Track         |         | %%DNT%%             |
@@ -110,7 +110,7 @@ GAT.loadAd({
 | `useragent` | string |          | User Agent           | Yes     | %%USERAGENT%%       |
 
 
-### Response status CallbackFunction 설명
+### About Response status Callback Function
 
 - 추가 구현을 통해 광고 응답 상태 따른 Action을 수행할 수 있습니다.(MAX 플랫폼에서 필요한 사항은 제거하지 말아주세요!)
 - CallbackFunction 이름은 수정이 가능합니다.
