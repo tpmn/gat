@@ -101,7 +101,7 @@ GAT.loadAd({
 - This function need to define addtional actions for SDK to take according to response status.
 - The name of callbackFunction can be changed freely.
 
-### Response CallbackFunction status parameter
+### Response Callback Function status parameter
 
 | status  | type   | status    |
 |---------|--------|-------|
