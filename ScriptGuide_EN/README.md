@@ -19,7 +19,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 ### How To Use GAT
 
 - You need to get GAT Inventory ID From us (See below for detail.) 
-- register the tag into AD SDK.
+- Register the tag into AD SDK.
 - Define callBackFunction For JsTag.
 - Do a test
 
