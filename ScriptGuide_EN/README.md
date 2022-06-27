@@ -46,7 +46,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 - When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the divid parameter value in script*** 
 - "div_" + inventory ID
 <pre>
-#For example, let inventory ID is 1234 :
+#For example, let the inventory ID is 1234 :
 < div id="<b>div_1234</b>" sytle="..." />
 GAT.loadAd({
     divid : "<b>div_1234</b>",
