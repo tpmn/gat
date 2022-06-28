@@ -18,16 +18,16 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 
 ### How To Use GAT
 
-- You need to get GAT Inventory ID from us (See below for detail) 
+- You need to get GAT InventoryId from us (See below for detail) 
 - Register the tag into AD SDK
 - Define a CallBack Function for JsTag
 - Do a Test
 
 
-### How to Get TPMN AdTag for app(GAT) Inventory ID
+### How to Get TPMN AdTag for app(GAT) InventoryId
 
-- You need be provided with inventory Id from us before you use GAT.
-- You can contact TPMN Manager or send a mail to info@tpmn.io to get inventory Id for each slot. Below is the format example.
+- You need be provided with InventoryId from us before you use GAT.
+- You can contact TPMN Manager or send a mail to info@tpmn.io to get InventoryId for each slot. Below is the format example.
 > Name and Position : 
 > 
 > AppBundle Id : 
@@ -44,7 +44,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 
 `<div>` : This tag define the area where ad is impressed.
 - When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the 'divid' parameter value in script.*** 
-- "div_" + InventoryID
+- "div_" + InventoryId
 <pre>
 #For example, let the inventory ID is 1234 :
 < div id="<b>div_1234</b>" sytle="..." />
