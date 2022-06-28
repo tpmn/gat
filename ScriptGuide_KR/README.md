@@ -44,7 +44,7 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 
 `<div>` : 광고가 나가는 영역입니다. 
 - 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 ***권장***합니다.
-- "div_" + Inventory ID
+- "div_" + InventoryId
 <pre>
 #Inventory ID가 1234인 경우 예시 :
 < div id="<b>div_1234</b>" sytle="..." />
@@ -124,7 +124,7 @@ GAT.loadAd({
 
 - 잘못된 요청인 경우입니다.
 - 필수 파라미터가 누락이 또는 공백일 경우에 발생합니다.
-- 잘못된 Inventory ID를 입력하였을때 발생합니다.
+- 잘못된 InventoryId를 입력하였을때 발생합니다.
 
 
 **ERROR**
