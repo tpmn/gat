@@ -100,7 +100,7 @@ GAT.loadAd({
 | parameter | type   | required | explanation          | Escaped | Macro               |
 |-----------|--------|----------|----------------------|---------|---------------------|
 | `divid`     | string | Yes      | Ad Slot Div Tag Id   |         |                     |
-| `ii`        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
+| `inventoryid`        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
 | `adverid`   | string | Yes      | idfa                 |         | %%ADVERTISING_ID%%  |
 | `dnt`       | string |          | Do Not Track         |         | %%DNT%%             |
 | `ipv4`      | string |          | IP Address           |         | %%IPADDRESS%%       |
