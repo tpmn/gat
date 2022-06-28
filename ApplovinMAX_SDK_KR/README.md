@@ -100,7 +100,7 @@ GAT.loadAd({
 | parameter | type   | required | 설명                   | Escaped | Macro               |
 |-----------|--------|----------|----------------------|---------|---------------------|
 | `divid`     | string | Yes      | 광고영역id (랜더링영역)   |         |                     |
-| `ii`        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
+| `inventoryid`        | string | Yes      | GAT Inventory Tag Id |         | %%PLACEMENTID%%     |
 | `adverid`   | string | Yes      | idfa                 |         | %%ADVERTISING_ID%%  |
 | `dnt`       | string |          | Do Not Track         |         | %%DNT%%             |
 | `ipv4`      | string |          | IP Address           |         | %%IPADDRESS%%       |
