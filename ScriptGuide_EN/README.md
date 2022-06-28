@@ -27,7 +27,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 ### How to Get TPMN AdTag for app(GAT) Inventory ID
 
 - You need be provided with inventory Id from us before you use GAT.
-- You can contact TPMN Manager or send a mail to info@tpmn.io(CEO e-mail) to get inventory Id for each slot. Below is the format example.
+- You can contact TPMN Manager or send a mail to info@tpmn.io to get inventory Id for each slot. Below is the format example.
 > Name and Position : 
 > 
 > AppBundle Id : 
