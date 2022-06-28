@@ -44,7 +44,7 @@ You don't need to install addtionanl AD SDK using this AdTag(GAT). Once you set 
 
 `<div>` : This tag define the area where ad is impressed.
 - When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the 'divid' parameter value in script.*** 
-- "div_" + inventory ID
+- "div_" + InventoryID
 <pre>
 #For example, let the inventory ID is 1234 :
 < div id="<b>div_1234</b>" sytle="..." />
@@ -59,7 +59,7 @@ GAT.loadAd({
 `tagCallbackFunction()` : This is the callback function to deal with event after the process is finished and response is returned.(Response status parameter is explained at the bottom.)
 
 ```html
-<div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
+<div id="div_InventoryId" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
 function tagCallbackFunction (status)
@@ -73,7 +73,7 @@ function tagCallbackFunction (status)
     }
 };
 GAT.loadAd({
-      divid : "div_adInventory",
+      divid : "div_InventoryId",
       inventoryid: "${TAG_INVENTORY_ID}",
       adverid: "${DEVICE_IDFA}"
 }, tagCallbackFunction);
@@ -124,7 +124,7 @@ GAT.loadAd({
 
 - It means bad request. Below are possible factors.
 - Check if you missed required parameter.
-- Check if the inventory Id is valid.
+- Check if the InventoryId is valid.
 
 
 **ERROR**
