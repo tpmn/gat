@@ -24,7 +24,7 @@
 
 **How to use GAT through Custom JS Tag Network Method**
 
-- You need to get GAT Inventory ID from us
+- You need to get GAT InventoryId from us
 - Register MAX Custom JS Tag Network (You must Define CallBack Function For Dealing With Events Related to Ad Request and Response)
 - Add Custom Netowork Inventory into MAX Ad Units and Activate it
 - Do a Test
@@ -53,9 +53,9 @@
 
 `<div>` : This tag define the area where ad is impressed. 
 - When you request ad with GAT, we ***recomand*** for you to ***set the above div tag Id same with the 'divid' parameter value in script.*** 
-- "div_" + inventory ID
+- "div_" + InventoryId
 <pre>
-#For example, let the inventory ID is 1234 :
+#For example, let the InventoryId is 1234 :
 < div id="<b>div_1234</b>" sytle="..." />
 GAT.loadAd({
     divid : "<b>div_1234</b>",
@@ -141,7 +141,7 @@ GAT.loadAd({
 
 - It means bad request. Below are possible factors.
 - Check if you missed required parameter.
-- Check if the inventory Id is valid.
+- Check if the InventoryId is valid.
 
 
 **ERROR**
