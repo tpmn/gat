@@ -1,3 +1,13 @@
+# Links
+
+[Script Guide English version](https://github.com/tpmn/gat/tree/main/ScriptGuide_EN)
+
+[Script Guide Korean version](https://github.com/tpmn/gat/tree/main/ScriptGuide_KO)
+
+[Script for ApplovinMAX SDK Guide English version](https://github.com/tpmn/gat/tree/main/ApplovinMAX_SDK_EN)
+
+[Script for ApplovinMAX SDK Guide Korean version](https://github.com/tpmn/gat/tree/main/ApplovinMAX_SDK_KO)
+
 # TPMN AdTag for app(GAT)
 
 *참고 : GAT는 TPMN AdTag for app의 약어입니다.
