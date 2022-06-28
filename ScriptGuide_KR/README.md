@@ -18,7 +18,7 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 
 ### 연동 순서
 
-- TPMN AdTag for app 인벤토리ID 발급
+- TPMN AdTag for app InventoryId 발급
 - AD SDK에 Tag 등록
 - JsTag의 CallBackFunction 정의
 - 테스트 진행
