@@ -24,7 +24,7 @@
 
 **연동 순서**
 
-- TPMN AdTag 인벤토리 ID 발급
+- TPMN AdTag InventoryId 발급
 - MAX Custom JS Tag Network 등록(광고 송수신을 위한 CallBackFunction 필수 정의)
 - MAX Ad Units에 Custom Netowork Inventory 설정 후 활성화
 - 테스트 진행
@@ -53,7 +53,7 @@
 
 `<div>` : 광고가 나가는 영역입니다. 
 - 광고 요청시(loadAd)시 ***해당 div객체 ID를 동일하게 설정*** 하는 것을 ***권장***합니다.
-- "div_" + inventory ID
+- "div_" + InventoryId
 <pre>
 #inventory ID가 1234인 경우 예시 :
 < div id="<b>div_1234</b>" sytle="..." />
@@ -68,7 +68,7 @@ GAT.loadAd({
 `tagCallbackFunction()` : 광고수신 정상유무를 처리하기위한 Callback 함수입니다.
 
 ```html
-<div id="div_adInventory" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
+<div id="div_InventoryId" style="width:100%;text-align:center;margin:0 auto;padding:0;"></div>
 <script type="text/javascript" src="https://static.tpmn.io/gat/ads.js"></script> 
 <script>
 function tagCallbackFunction (status)
@@ -141,7 +141,7 @@ GAT.loadAd({
 
 - 잘못된 요청인 경우입니다.
 - 필수 파라미터가 누락이 또는 공백일 경우에 발생합니다.
-- 잘못된 Inverntory ID를 입력하였을때 발생합니다.
+- 잘못된 InventoryId를 입력하였을때 발생합니다.
 
 
 **ERROR**
