@@ -36,7 +36,7 @@ AdTag를 활용하므로 별도 광고 SDK 설치 없이 쉬운 설정을 통해
 > 
 > 내용 : 
 > 
-> Applobin SDK 사용 여부 :
+> Applovin SDK 사용 여부 :
 
 
 
